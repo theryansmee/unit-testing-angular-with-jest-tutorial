@@ -12,6 +12,17 @@
             "element",
             "app",
             "kebab-case"
+        ],
+        "indent": [true, "tabs", 4],
+        "no-trailing-whitespace": false,
+        "no-inferrable-types": false,
+        "one-line": false,
+        "max-line-length": [ false ],
+        "member-ordering": [ false ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "generated/**"
         ]
     }
 }

@@ -2,21 +2,30 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "downlevelIteration": true,
+    "importHelpers": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es5",
+    "target": "es2015",
+    "allowJs": true,
     "typeRoots": [
       "node_modules/@types"
     ],
+    "types": [
+      "jest"
+    ],
     "lib": [
-      "es2018",
+      "es2017",
       "dom"
-    ]
-  }
+    ],
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "**/*.spec.ts"
+  ]
 }
